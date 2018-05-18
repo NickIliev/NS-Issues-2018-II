@@ -1,0 +1,17 @@
+/usr/local/Cellar/android-sdk/24.4.1_1/platforms/android-27/android.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/9/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/0/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/11/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/7/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/6/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/1/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/10/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/8/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/4/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/15/support-annotations-26.0.0-alpha1.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/3/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/12/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/2/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/13/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/5/classes.jar
+/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/exploded-dependencies/14/classes.jar

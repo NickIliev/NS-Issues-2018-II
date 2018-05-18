@@ -1,0 +1,4 @@
+#Fri May 18 11:04:30 EEST 2018
+base.0=/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
