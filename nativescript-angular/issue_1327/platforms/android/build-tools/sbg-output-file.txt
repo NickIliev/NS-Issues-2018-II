@@ -1,1 +1,0 @@
-/Users/niliev/Desktop/git/NS-Issues-2018-II/nativescript-angular/issue_1327/platforms/android/app/src/main/java
