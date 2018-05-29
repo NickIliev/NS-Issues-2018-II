@@ -1,0 +1,16 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+<StackLayout class="p-20" height="500" backgroundColor="lightgray">
+    <Label text="http://23.97.179.10:8081/images/roundLogo.png" textWrap="true" />
+    <Image src="http://23.97.179.10:8081/images/roundLogo.png" width="50" stretch="aspectFit" marginBottom="20"/>
+
+    <Label text="http://23.97.179.10:8081/api/MobileCommon/GetUserImage?userName=Admin" textWrap="true" />
+    <Image src="{{ myLogo }}" width="50" stretch="aspectFit" />
+</StackLayout>
+</Page>
