@@ -10,6 +10,7 @@
         <StackLayout class="p-20">
             <DatePicker loaded="onDatePickerLoaded" day="20" month="04" year="1980"></DatePicker>
             <TimePicker loaded="onTimePickerLoaded" hour="16" minute="10"></TimePicker>
+            <TextView loaded="onTextViewLoaded" hint="" text="initial text" editable="true" />
         </StackLayout>
     </ScrollView>
 </Page>

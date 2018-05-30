@@ -39,3 +39,12 @@ export function onTimePickerLoaded(args) {
         console.dir(args);
     })
 } 
+
+export function onTextViewLoaded(args) {
+    let textView = args.object;
+
+    textView.on("textChange", (args) => {
+        console.dir(args);
+    })
+
+}
