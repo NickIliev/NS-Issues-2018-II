@@ -1,0 +1,15 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <ScrollView>
+        <StackLayout class="p-20">
+            <DatePicker loaded="onDatePickerLoaded" day="20" month="04" year="1980"></DatePicker>
+            <TimePicker loaded="onTimePickerLoaded" hour="16" minute="10"></TimePicker>
+        </StackLayout>
+    </ScrollView>
+</Page>
