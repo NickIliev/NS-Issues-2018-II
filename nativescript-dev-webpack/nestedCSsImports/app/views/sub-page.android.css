@@ -1,0 +1,11 @@
+/* Not working with Webpack; Working with CLI build */
+/* @import url("~/views/style-common.css"); */
+
+/* Working with Webpack; Not Working with CLI build */
+@import url("./style-common.css");
+
+
+Label {
+    background-color: brown;
+    color: whitesmoke;
+}

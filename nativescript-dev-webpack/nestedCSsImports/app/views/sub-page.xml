@@ -1,0 +1,5 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
+    <StackLayout class="background" height="600">
+        <Label text="This page should have aquamarine background color coming form imported CSS" textWrap="true" />
+    </StackLayout>
+</Page>

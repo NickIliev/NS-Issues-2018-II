@@ -1,0 +1,6 @@
+@import url("./style-common.css");
+
+Label {
+    background-color: brown;
+    color: whitesmoke;
+}
