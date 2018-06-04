@@ -14,6 +14,7 @@
 	},
 	"dependencies": {
 		"nativescript-theme-core": "~1.0.4",
+		"nativescript-websockets": "^1.5.0",
 		"tns-core-modules": "~4.1.0"
 	},
 	"devDependencies": {
