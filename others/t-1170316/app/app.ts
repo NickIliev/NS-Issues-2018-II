@@ -9,29 +9,28 @@ let mySocket: any;
 application.on(application.launchEvent, (args) => {
     LocalNotifications.hasPermission()
 
-    mySocket = new WS("ws://echo.websocket.org",{protocols: [/* 'chat', 'video' */], timeout: 10000, allowCellular: true, headers: { 'Authorization': 'Basic ...' }});
+    mySocket = new WS("ws://echo.websocket.org", { protocols: [/* 'chat', 'video' */], timeout: 10000, allowCellular: true, headers: { 'Authorization': 'Basic ...' } });
     mySocket.on('open', (socket) => { console.log("Hey I'm open"); socket.send("Hello"); });
-    mySocket.on('message', (socket, message) => { 
-        console.log("Got a message", message); 
+    mySocket.on('message', (socket, message) => {
+        console.log("Got a message", message);
 
-        LocalNotifications.addOnMessageReceivedCallback(
-            function (notificationData) {
-              alert({
+        LocalNotifications.addOnMessageReceivedCallback((notificationData) => {
+
+            alert({
                 title: "Notification received",
                 message: "ID: " + notificationData.id +
                     "\nTitle: " + notificationData.title +
-                     "\nBody: " + notificationData.body,
+                    "\nBody: " + notificationData.body,
                 okButtonText: "Excellent!"
-              });
-            }
-        ).then(
-            function() {
-              alert({
+            });
+        }
+        ).then(() => {
+            alert({
                 title: "Listener added",
                 message: "We'll let you know when a notification is received.",
                 okButtonText: "Nice :)"
-              });
-            }
+            });
+        }
         );
 
 
@@ -39,23 +38,23 @@ application.on(application.launchEvent, (args) => {
             id: 3,
             title: 'Hi',
             body: 'You should see a \'3\' somewhere',
-            at: new Date(new Date().getTime() + 10*1000),
+            at: new Date(new Date().getTime() + 10 * 1000),
             badge: 3
-          }]).then(
-              () => {
+        }]).then(
+            () => {
                 alert({
-                  title: "Notification scheduled",
-                  message: 'ID: 3',
-                  okButtonText: "OK, thanks"
+                    title: "Notification scheduled",
+                    message: 'ID: 3',
+                    okButtonText: "OK, thanks"
                 });
-              },(error) => {
+            }, (error) => {
                 console.log("doScheduleAndSetBadgeNumber error: " + error);
-              }
-          );
+            }
+        );
 
     });
     mySocket.on('close', (socket, code, reason) => { console.log("Socket was closed because: ", reason, " code: ", code); });
-    mySocket.on('error', (socket, error) => { console.log("Socket had an error", error);});
+    mySocket.on('error', (socket, error) => { console.log("Socket had an error", error); });
 });
 
 application.on(application.resumeEvent, (args) => {
