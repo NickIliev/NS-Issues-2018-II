@@ -9,10 +9,31 @@ let mySocket: any;
 application.on(application.launchEvent, (args) => {
     LocalNotifications.hasPermission()
 
-    mySocket = new WS("ws://echo.websocket.org",{protocols: [/* 'chat', 'video' */], timeout: 6000, allowCellular: true, headers: { 'Authorization': 'Basic ...' }});
+    mySocket = new WS("ws://echo.websocket.org",{protocols: [/* 'chat', 'video' */], timeout: 10000, allowCellular: true, headers: { 'Authorization': 'Basic ...' }});
     mySocket.on('open', (socket) => { console.log("Hey I'm open"); socket.send("Hello"); });
     mySocket.on('message', (socket, message) => { 
         console.log("Got a message", message); 
+
+        LocalNotifications.addOnMessageReceivedCallback(
+            function (notificationData) {
+              alert({
+                title: "Notification received",
+                message: "ID: " + notificationData.id +
+                    "\nTitle: " + notificationData.title +
+                     "\nBody: " + notificationData.body,
+                okButtonText: "Excellent!"
+              });
+            }
+        ).then(
+            function() {
+              alert({
+                title: "Listener added",
+                message: "We'll let you know when a notification is received.",
+                okButtonText: "Nice :)"
+              });
+            }
+        );
+
 
         LocalNotifications.schedule([{
             id: 3,
