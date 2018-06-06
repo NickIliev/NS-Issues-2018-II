@@ -4,6 +4,18 @@
 </ActionBar>
 
 <StackLayout class="page">
-    <Label text="MAIN PAGE"   textWrap="true" class="h1"></Label>
-    <Label text="Open MAP Page" [nsRouterLink]="['/map']" textWrap="true" class="h2 text-center" backgroundColor="lightgray"></Label>
+    
+    
+</StackLayout>
+
+
+<StackLayout>
+    <TabView class="tab-view">
+        <StackLayout *tabItem="{title: 'Tab1'}">
+            <Label text="Open MAP Page" [nsRouterLink]="['/map']" textWrap="true" class="h2 text-center" backgroundColor="lightgray"></Label>
+        </StackLayout>
+        <StackLayout *tabItem="{title: 'Tab2'}">
+                <Label text="MAIN PAGE"   textWrap="true" class="h1"></Label>
+        </StackLayout>
+    </TabView>
 </StackLayout>
