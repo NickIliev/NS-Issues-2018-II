@@ -6,8 +6,12 @@
         <!-- binded method  readManufacturerName not working (this.uuid is undefined) -->
         <Button text="TAP" tap="{{ device.readManufacturerName }}" class="btn btn-primary btn-active"/>
 
-        <!-- binded property UUID works as expected -->
+        <!-- binded property UUID works as expected - will print "my device.UUID 001"-->
         <Label text="{{ device.uuid }}" textWrap="true" />
+
+        <!-- binded property UUID Not working as expected - will print the context of readManufacturerName instead of this.uuid -->
+        <Label text="{{ device.readManufacturerName }}" textWrap="true" marginTop="50" backgroundColor="lightgray"/>
+        
         
     </StackLayout>
 </Page>

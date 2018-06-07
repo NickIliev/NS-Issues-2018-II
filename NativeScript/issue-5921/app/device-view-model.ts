@@ -5,7 +5,7 @@ export class Device  {
     public uuid: string;
 
     constructor() {
-        this.uuid = "device.UUID 001";
+        this.uuid = "my device.UUID 001";
         
         // this.readManufacturerName(); // this will work
 
@@ -41,5 +41,7 @@ export class Device  {
             "device": "[Circular]"
             }
         */
+
+        return this.uuid; // when used via binding this will print the context of the current method instead of the value of uuid property
     }
 }
