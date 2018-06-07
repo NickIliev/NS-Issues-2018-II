@@ -1,0 +1,13 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+    <StackLayout class="p-20">
+        <Label text="ALA" textWrap="true" />
+        
+        <!-- binded method  readManufacturerName not working (this.uuid is undefined) -->
+        <Button text="TAP" tap="{{ device.readManufacturerName }}" class="btn btn-primary btn-active"/>
+
+        <!-- binded property UUID works as expected -->
+        <Label text="{{ device.uuid }}" textWrap="true" />
+        
+    </StackLayout>
+</Page>
