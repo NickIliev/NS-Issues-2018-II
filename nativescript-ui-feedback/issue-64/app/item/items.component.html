@@ -1,0 +1,18 @@
+
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+<StackLayout class="page">
+    <!-- <ListView [items]="items" class="list-group">
+        <ng-template let-item="item">
+            <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
+                class="list-group-item"></Label>
+        </ng-template>
+    </ListView> -->
+
+    <RadListView [items]="items" pullToRefresh="true" (pullToRefreshInitiated)="onPullToRefreshInitiated($event)">
+        <ng-template tkListItemTemplate let-item="item">
+            <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"  class="list-group-item m-10"></Label>
+        </ng-template>
+    </RadListView>
+</StackLayout>
