@@ -13,6 +13,8 @@ export function navigatingTo(args: EventData) {
     let page = <Page>args.object;
     page.bindingContext = new HelloWorldModel();
     try {
+        // Note that the constructor with two arguments will be available on on API 26.0.1 and above
+        // create API Level check to use the NOTIFICATION_CHANNEL_ID
         const NOTIFICATION_CHANNEL_ID = "1";
         const builder = new android.support.v4.app.NotificationCompat.Builder(context, NOTIFICATION_CHANNEL_ID);
         console.log(builder);
