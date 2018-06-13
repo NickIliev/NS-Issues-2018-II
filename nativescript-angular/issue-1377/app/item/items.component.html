@@ -6,8 +6,13 @@
 <StackLayout class="page">
     <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
-            <Label [nsRouterLink]="['/item', item.id]" pageTransition="slide" [text]="item.name"
-                class="list-group-item"></Label>
+            <StackLayout>
+                <!-- With transition => Bug -->
+                <Label [nsRouterLink]="['/item', item.id]" pageTransition="slide" [text]="item.name" class="list-group-item" backgroundColor="orangered"></Label>
+
+                <!-- Without transition => No bugs -->
+                <Label [nsRouterLink]="['/item', item.id]" [text]="item.name" class="list-group-item" backgroundColor="green"></Label>
+            </StackLayout>
         </ng-template>
     </ListView>
 </StackLayout>
