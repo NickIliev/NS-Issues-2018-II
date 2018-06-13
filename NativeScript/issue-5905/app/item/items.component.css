@@ -1,0 +1,8 @@
+.back {
+    background-image: url("res://logo");
+    background-position: center;
+    background-size: cover;
+}
+
+/* style="background-position: center; background-size: cover;"
+                 style.backgroundImage="res://logo" */
