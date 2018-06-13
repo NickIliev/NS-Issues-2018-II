@@ -64,8 +64,7 @@ module.exports = env => {
         },
         target: nativescriptTarget,
         entry: {
-            bundle: entryPath,
-            MainActivity: "MainActivity"
+            bundle: entryPath
         },
         output: {
             pathinfo: false,
