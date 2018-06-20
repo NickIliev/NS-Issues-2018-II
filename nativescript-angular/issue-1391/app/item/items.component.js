@@ -12,8 +12,8 @@ var ItemsComponent = /** @class */ (function () {
         this.items = this.itemService.getItems();
     };
     ItemsComponent.prototype.onItemTap = function (args) {
+        console.log(args.index);
         console.log("onItemTap");
-        console.log(args);
     };
     ItemsComponent = __decorate([
         core_1.Component({

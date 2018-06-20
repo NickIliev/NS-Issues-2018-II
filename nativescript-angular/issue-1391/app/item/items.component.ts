@@ -21,5 +21,6 @@ export class ItemsComponent implements OnInit {
 
     onItemTap(args) {
         console.log("onItemTap");
+        console.log(args.index);
     }
 }
