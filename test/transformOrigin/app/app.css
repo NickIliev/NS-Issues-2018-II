@@ -1,0 +1,14 @@
+﻿
+@import '~nativescript-theme-core/css/core.light.css';
+
+@keyframes example {
+    0% { transform: rotate(360);  }
+    50% { transform: rotate(-360); }
+}
+
+.view {
+    animation-name: example;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    transform-origin: bottom;
+}
