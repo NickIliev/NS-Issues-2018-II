@@ -1,0 +1,22 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <StackLayout class="p-20">
+        <Button text="isEnabled" tap="{{ isEnabled }}" class="btn btn-primary btn-active"/>
+        <Button text="isEnabled" tap="{{ startScan }}" class="btn btn-primary btn-active"/>
+        <ListView items="{{ foundDevices }}"  loaded="onLoaded" itemLoading="onItemLoading" itemTap="onItemTap">
+            <ListView.itemTemplate>
+                <StackLayout margin="8" padding="8" backgroundColor="lightgray" borderRadius="10" >
+                    <Label text="{{ name }}" textWrap="true" />
+                    <Label text="{{ RSSI }}" textWrap="true" />
+                    <Label text="{{ UUID }}" textWrap="true" />
+                </StackLayout>
+            </ListView.itemTemplate>
+        </ListView>
+    </StackLayout>
+</Page>
