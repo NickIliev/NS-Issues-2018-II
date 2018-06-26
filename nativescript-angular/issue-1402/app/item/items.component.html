@@ -1,0 +1,7 @@
+
+<StackLayout class="page">
+    <Button text="toogle isEnabled" (tap)="toggle()"></Button>
+    
+    <ListPicker [isEnabled]="isEnabled" [items]="items" [(ngModel)]="selectedListPickerIndex">
+    </ListPicker>
+</StackLayout>
