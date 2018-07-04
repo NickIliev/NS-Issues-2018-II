@@ -1,0 +1,12 @@
+﻿
+@import '~nativescript-theme-core/css/core.light.css';
+
+@import "~animate.css/animate.min.css";
+
+/* the aniumation pulse comes from animate.css plugin but the same is reporducible with the keygframe below (from NativeScript docs) */
+.breath {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}

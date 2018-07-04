@@ -1,0 +1,56 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <StackLayout>
+        <StackLayout orientation="horizontal" class="p-20">
+            <Image src="~/images/hat00001.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00002.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00003.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00004.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00005.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00006.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00007.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" class="p-20">
+            <Image src="~/images/hat00001.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00002.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00003.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00004.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00005.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00006.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00007.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" class="p-20">
+            <Image src="~/images/hat00001.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00002.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00003.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00004.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00005.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00006.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00007.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" class="p-20">
+            <Image src="~/images/hat00001.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00002.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00003.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00004.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00005.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00006.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00007.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+        </StackLayout>
+        <StackLayout orientation="horizontal" class="p-20">
+            <Image src="~/images/hat00001.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00002.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00003.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00004.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00005.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00006.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+            <Image src="~/images/hat00007.png" class="breath" verticalAlignment="top" stretch="aspectFit" width="50" />
+        </StackLayout>
+    </StackLayout>
+</Page>
