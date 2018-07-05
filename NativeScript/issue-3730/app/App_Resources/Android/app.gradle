@@ -2,7 +2,7 @@
 
 // Uncomment to add recyclerview-v7 dependency
 dependencies {
-  compile "de.mannodermaus.rxjava2:rxbonjour:2.0.0-RC1"
+  implementation "de.mannodermaus.rxjava2:rxbonjour:2.0.0-RC1"
 }
 
 android {  
