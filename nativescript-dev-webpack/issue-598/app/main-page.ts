@@ -11,6 +11,6 @@ export function navigatingTo(args: EventData) {
 export function onItemTouch(args: TouchGestureEventData) {
     const stackLayout = <StackLayout>args.object;
     if (args.action === "up") {
-        stackLayout.page.showModal('modals/some-page', "context", () => { }, false, false);
+        stackLayout.page.showModal('modals/some-page', {}, () => { }, true, true);
     }
 }
