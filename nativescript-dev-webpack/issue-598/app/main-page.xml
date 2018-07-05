@@ -8,7 +8,7 @@
 
     <StackLayout touch="onItemTouch" 
                  width="200" height="500" class="p-20" 
-                 backgroundColor="red" color="white">
-        <Label text="Touch the Stack" class="h1 text-center"/>
+                 backgroundColor="red" >
+        <Label text="Touch the Stack" class="h3" color="white"/>
     </StackLayout>
 </Page>
