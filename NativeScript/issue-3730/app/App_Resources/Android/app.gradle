@@ -1,0 +1,16 @@
+// Add your native dependencies here:
+
+// Uncomment to add recyclerview-v7 dependency
+dependencies {
+  compile "de.mannodermaus.rxjava2:rxbonjour:2.0.0-RC1"
+}
+
+android {  
+  defaultConfig {  
+    generatedDensities = []
+    applicationId = "org.nativescript.issue3730"  
+  }  
+  aaptOptions {  
+    additionalParameters "--no-version-vectors"  
+  }  
+} 
