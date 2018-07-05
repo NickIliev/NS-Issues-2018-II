@@ -1,0 +1,5 @@
+<Page backgroundColor="green" showingModally="onShowingModally" loaded="onLoaded">
+    <StackLayout backgroundColor="lightGreen" width="250" height="300">
+        <Button text="Modal Page Buttone" tap="onTap"/>
+    </StackLayout>
+</Page>

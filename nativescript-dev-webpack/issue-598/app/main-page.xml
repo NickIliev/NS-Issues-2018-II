@@ -1,0 +1,14 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <StackLayout touch="onItemTouch" 
+                 width="200" height="500" class="p-20" 
+                 backgroundColor="red" color="white">
+        <Label text="Touch the Stack" class="h1 text-center"/>
+    </StackLayout>
+</Page>
