@@ -1,0 +1,13 @@
+dependencies {
+  implementation "de.mannodermaus.rxjava2:rxbonjour:2.0.0-RC1"
+}
+
+android {  
+  defaultConfig {  
+    generatedDensities = []
+    applicationId = "org.nativescript.issue3730ng"  
+  }  
+  aaptOptions {  
+    additionalParameters "--no-version-vectors"  
+  }  
+} 
