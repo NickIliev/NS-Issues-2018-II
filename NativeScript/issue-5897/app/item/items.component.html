@@ -3,19 +3,13 @@
     <ActionItem icon="res://logo" [nsRouterLink]="['/map']" title="Map"></ActionItem>
 </ActionBar>
 
-<StackLayout class="page">
-    
-    
-</StackLayout>
-
-
-<StackLayout>
+<GridLayout>
     <TabView class="tab-view">
-        <StackLayout *tabItem="{title: 'Tab1'}">
+        <StackLayout *tabItem="{title: 'Tab1', icon: 'res://icon'}">
             <Label text="Open MAP Page" [nsRouterLink]="['/map']" textWrap="true" class="h2 text-center" backgroundColor="lightgray"></Label>
         </StackLayout>
-        <StackLayout *tabItem="{title: 'Tab2'}">
+        <StackLayout *tabItem="{title: 'Tab2', icon: 'res://icon'}">
                 <Label text="MAIN PAGE"   textWrap="true" class="h1"></Label>
         </StackLayout>
     </TabView>
-</StackLayout>
+</GridLayout>

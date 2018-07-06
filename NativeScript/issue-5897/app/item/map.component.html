@@ -1,7 +1,7 @@
 <ActionBar title="Map" class="action-bar">
-        <ActionItem icon="res://logo" [nsRouterLink]="['/items']" title="Main"></ActionItem>
+    <ActionItem icon="res://logo" [nsRouterLink]="['/items']" title="Main"></ActionItem>
 </ActionBar>
 
-<GridLayout>
-    <MapView #mapView zoom="13" latitude="-33.86" longitude="151.20" (mapReady)="onMapReady($event)"></MapView>
+<GridLayout rows="*">
+    <MapView row="0" (mapReady)="onMapReady($event)"></MapView>
 </GridLayout>

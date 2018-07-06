@@ -1,0 +1,18 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <GridLayout rows="auto, *" class="p-20">
+        <Button row="0" text="Animate" tap="animate" class="btn btn-primary btn-active"/>
+        <GridLayout row="1" rows="*, *, *, *" columns="*">
+            <Image row="0" src="https://i.ytimg.com/vi/_qQTOJGUzWs/maxresdefault.jpg" width="300" stretch="aspectFill" loaded="onImage1Loaded"/>
+            <Image row="1" src="https://i.ytimg.com/vi/_qQTOJGUzWs/maxresdefault.jpg" width="300" stretch="aspectFill" loaded="onImage2Loaded"/>
+            <Image row="2" src="https://i.ytimg.com/vi/_qQTOJGUzWs/maxresdefault.jpg" width="300" stretch="aspectFill" loaded="onImagе3Loaded"/>
+            <Image row="3" src="https://i.ytimg.com/vi/_qQTOJGUzWs/maxresdefault.jpg" width="300" stretch="aspectFill" loaded="onImage4Loaded"/>
+        </GridLayout>
+    </GridLayout>
+</Page>
