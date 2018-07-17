@@ -1,0 +1,16 @@
+
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+<StackLayout class="page">
+    <StackLayout class="my-class" verticalAlignment="top">
+        <Label textWrap="true" (loaded)="onLabelLoaded($event)" >
+            <FormattedString>
+                <Span [text]="model.someText"></Span>
+                <Span [text]="model.someText2" class="link"></Span>
+                <Span [text]="model.someText3"></Span>
+            </FormattedString>
+        </Label>
+
+    </StackLayout>
+</StackLayout>
