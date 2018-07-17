@@ -1,0 +1,11 @@
+
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+<StackLayout class="page" backgroundColor="black"  color="white">
+    <ListView [items]="items">
+        <ng-template let-item="item">
+            <Label [nsRouterLink]="['/item', item.id]" pageTransition="fade" [text]="item.name" ></Label>
+        </ng-template>
+    </ListView>
+</StackLayout>
