@@ -1,0 +1,19 @@
+<ActionBar title="Home" class="action-bar">
+</ActionBar>
+
+<GridLayout rows="*, auto, auto, auto">
+	<RadDataForm #dataform row="0" [source]="teste">
+		<TKEntityProperty tkDataFormProperty name="plain_txt" displayName="Plain:" index="0" 
+			autoCompleteDisplayMode="plain" [valuesProvider]="_acoes">
+			<TKPropertyEditor tkEntityPropertyEditor type="AutoCompleteInline"></TKPropertyEditor>
+		</TKEntityProperty>
+
+		<TKEntityProperty tkDataFormProperty name="token_txt" displayName="Tokens:" 
+			index="1" autoCompleteDisplayMode="tokens" [valuesProvider]="_acoes">
+			<TKPropertyEditor tkEntityPropertyEditor type="AutoCompleteInline"></TKPropertyEditor>
+		</TKEntityProperty>
+	</RadDataForm>
+	<Label row="1" [text]="result" textWrap="true"></Label>
+	<Button row="2" text="Check Values" class="btn" (tap)="checkValues()"></Button>
+	<Button row="3" text="Check Model" class="btn" (tap)="checkModel()"></Button>
+</GridLayout>
