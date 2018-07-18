@@ -1,0 +1,5 @@
+<!-- <GridLayout rows="*" columns="*" backgroundColor="red"> -->
+    <Frame id="rootFrame" defaultPage="main-page" >
+    </Frame>
+<!-- </GridLayout> -->
+

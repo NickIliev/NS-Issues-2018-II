@@ -1,0 +1,7 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <StackLayout class="page p-20" backgroundColor="black">
+        <Button text="TAP" tap="navigate" class="btn btn-primary btn-active"/>
+    </StackLayout>
+</Page>
