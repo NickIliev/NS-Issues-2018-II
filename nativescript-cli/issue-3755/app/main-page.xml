@@ -5,6 +5,6 @@
     <StackLayout class="p-20">
         <Label text="Main Page" class="h1 text-center"/>
         <Button text="open modal" tap="openModal" />
-        
+        <Label text="Touche me to open the modal" touch="openModal" textWrap="true" />
     </StackLayout>
 </Page>

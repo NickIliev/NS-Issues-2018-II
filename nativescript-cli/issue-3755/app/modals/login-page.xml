@@ -1,7 +1,7 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" shownModally="onShownModally" backgroundColor="green">
     <StackLayout>
         <Label text="My Big Modal Page" textWrap="true" class="h1 text-center" />
-        <Label text="ADDED VIA libesync" textWrap="true" />
+        <Label text="ADDED VIA libesynclibesynclibesync" textWrap="true" />
         
         <Button text="Close modal" tap="onLoginButtonTap" />
     </StackLayout>
