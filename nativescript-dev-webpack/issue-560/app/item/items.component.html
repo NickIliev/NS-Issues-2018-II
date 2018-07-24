@@ -1,0 +1,27 @@
+
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+
+<StackLayout class="page">
+
+    <ActivityIndicator busy="true"></ActivityIndicator>
+
+    <DropDown #dd 
+            backgroundColor="red"
+            color="white"
+            [items]="items"
+            [(ngModel)]="selectedIndex"
+            (selectedIndexChanged)="onchange($event)"
+            (opened)="onopen()"
+            (closed)="onclose()">
+    </DropDown>
+
+    
+    <!-- <ListView [items]="items" class="list-group">
+        <ng-template let-item="item">
+            <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
+                class="list-group-item"></Label>
+        </ng-template>
+    </ListView> -->
+</StackLayout>
