@@ -1,0 +1,32 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" 
+      xmlns:greeter="components" 
+      xmlns:greeter="components" 
+      navigatingTo="navigatingTo" 
+      class="page">
+    <GridLayout id="container" backgroundColor="lightgray">
+        <ListView items="{{ items }}"  loaded="onLoaded" itemTemplateSelector="$index % 2 === 0 ? ($index % 3 === 0 ? 'supereven' : 'even' ) : 'odd'">
+            <ListView.itemTemplates>
+
+                <template key="supereven">
+                    <StackLayout class="list-group-item" style.backgroundColor="blue" padding="10">
+                        <greeter:greeter job="{{ someJob, someJob }}"/>
+                    </StackLayout>
+                </template>
+
+                <template key="even">
+                    <StackLayout class="list-group-item" style.backgroundColor="white" padding="5">
+                        <greeter:greeter name="{{ someName, someName }}"/>
+                    </StackLayout>
+                </template>
+
+                <template key="odd">
+                    <StackLayout class="list-group-item" style.backgroundColor="gray" padding="20">
+                        <greeter:greeter name="{{ someName, someName }}" job="{{ someJob, someJob }}"/>
+                    </StackLayout>
+                </template>
+
+            </ListView.itemTemplates>
+        </ListView>
+    </GridLayout>
+</Page>
