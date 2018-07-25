@@ -1,0 +1,12 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <ListView items="{{ items }}"  loaded="onLoaded" itemLoading="onItemLoading" itemTap="onItemTap">
+        <ListView.itemTemplate>
+            <StackLayout>
+                <Label text="{{ index }}" textWrap="true" />
+                <Label text="{{ text }}" textWrap="true" />
+                <StackLayout height="100" backgroundColor="red" visibility="{{ selected ? 'visible' : 'collapsed' }}" />
+            </StackLayout>
+        </ListView.itemTemplate>
+    </ListView>
+</Page>
