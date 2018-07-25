@@ -4,7 +4,7 @@ import { StackLayout } from "tns-core-modules/ui/layouts/stack-layout/stack-layo
 export function onLoad(args: EventData) {
     let container = <StackLayout>args.object;
     container.bindingContext = { 
-        myName: args.object["name"] || "anonymous",
-        myJob: args.object["job"] || "N/A",
+        myName: args.object["name"],
+        myJob: args.object["job"],
     };
 };
