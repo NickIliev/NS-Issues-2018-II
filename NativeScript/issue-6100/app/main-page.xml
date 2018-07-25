@@ -5,25 +5,19 @@
       navigatingTo="navigatingTo" 
       class="page">
     <GridLayout id="container" backgroundColor="lightgray">
-        <ListView items="{{ items }}"  loaded="onLoaded" itemTemplateSelector="$index % 2 === 0 ? ($index % 3 === 0 ? 'supereven' : 'even' ) : 'odd'">
+
+        <ListView items="{{ items }}"  loaded="onLoaded" itemTemplateSelector="$index % 2 === 0 ? 'even' : 'odd'">
             <ListView.itemTemplates>
 
-                <template key="supereven">
-                    <StackLayout class="list-group-item" style.backgroundColor="blue" padding="10">
-                        <Label text="{{ 'index: ' +  $index }}"  class="h1" color="red" textWrap="true" />
-                        <greeter:greeter job="{{ someJob, someJob }}" horizontalAlignment="right"/>
-                    </StackLayout>
-                </template>
-
                 <template key="even">
-                    <StackLayout class="list-group-item" style.backgroundColor="white" padding="5">
+                    <StackLayout class="list-group-item p-10" backgroundColor="white">
                         <Label text="{{ 'index: ' +  $index }}"  class="h1" color="red" textWrap="true" />
-                        <greeter:greeter name="{{ someName, someName }}" horizontalAlignment="center"/>
+                        <greeter:greeter name="{{ someName, someName }}" />
                     </StackLayout>
                 </template>
 
                 <template key="odd">
-                    <StackLayout class="list-group-item" style.backgroundColor="pink" padding="20">
+                    <StackLayout class="list-group-item p-10" backgroundColor="pink">
                         <Label text="{{ 'index: ' +  $index }}" class="h1" color="red" textWrap="true" />
                         <greeter:greeter job="{{ someJob, someJob }}" name="{{ someName, someName }}" />
                     </StackLayout>

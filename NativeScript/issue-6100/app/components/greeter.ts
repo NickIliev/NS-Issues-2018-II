@@ -5,6 +5,6 @@ export function onLoad(args: EventData) {
     let container = <StackLayout>args.object;
     container.bindingContext = { 
         myName: args.object["name"],
-        myJob: args.object["job"],
+        myJob: args.object["job"]
     };
 };

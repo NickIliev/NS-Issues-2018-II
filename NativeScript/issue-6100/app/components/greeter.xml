@@ -1,4 +1,6 @@
 <StackLayout class="p-10" backgroundColor="transparent" loaded="onLoad">
-    <Label text="{{ myName, myName }}" textWrap="true" />
-    <Label text="{{ myJob, myJob }}" textWrap="true" />
+    <Label text="{{ myName, myName }}" textWrap="true" class="h2" fontWeight="bold"/>
+    <Label text="{{ myJob, myJob }}" textWrap="true" backgroundColor="orange"/>
 </StackLayout>
+
+
