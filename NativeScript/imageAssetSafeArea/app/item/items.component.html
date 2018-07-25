@@ -1,0 +1,26 @@
+<!-- NOT WORKING Scenario -->
+<!-- Workaround : remove the ScrollView -->
+<!-- Workaround 2 : assign height and stretch="aspectFill"-->
+<ScrollView>
+    <FlexboxLayout flexDirection="column-reverse">
+        <Image [src]="imageUri" flexGrow="2" class="p-15 img-rounded"></Image>
+        <Button text="Change Pic" (tap)="onTap()" class="btn btn-primary btn-active"></Button>
+        <Label text="Photo should appear on button tap" textWrap="true"></Label>
+    </FlexboxLayout>
+</ScrollView>
+
+<!-- WORKING Scenarios -->
+
+<!-- 
+<StackLayout>
+    <Image [src]="imageUri" class="p-15 img-rounded"></Image>
+    <Button text="Change Pic" (tap)="onTap()" class="btn btn-primary btn-active"></Button>
+</StackLayout> 
+-->
+
+<!-- 
+<FlexboxLayout flexDirection="column-reverse">
+    <Image [src]="imageUri" flexGrow="2" class="p-15 img-rounded"></Image>
+    <Button text="Change Pic" (tap)="onTap()" class="btn btn-primary btn-active"></Button>
+</FlexboxLayout> 
+-->
