@@ -1,4 +1,4 @@
-<StackLayout class="p-10" backgroundColor="red" color="white" loaded="onLoad">
+<StackLayout class="p-10" backgroundColor="transparent" loaded="onLoad">
     <Label text="{{ myName, myName }}" textWrap="true" />
     <Label text="{{ 'Working aa ' + myJob }}" textWrap="true" />
 </StackLayout>
