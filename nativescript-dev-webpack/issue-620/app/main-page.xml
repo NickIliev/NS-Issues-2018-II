@@ -1,0 +1,4 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+    <StackLayout id="stack" class="p-20"/>
+</Page>
