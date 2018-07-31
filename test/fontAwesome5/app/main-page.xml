@@ -1,0 +1,32 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+	<StackLayout margin="20">
+		<!-- far fa-address-book -->
+		<Label class="far" style="font-size: 50; color: blue" text="&#xf2b9;">
+		</Label>
+		<!-- fas fa-cog -->
+		<Label class="fas" style="font-size: 50; color: gray" text="&#xf013;">
+		</Label>
+		<!-- fab fa-github -->
+		<Label class="fab" style="font-size: 50; color: black" text="&#xf09b;">
+		</Label>
+
+        <!-- No brands icon -->
+        <Button class="fab btn tbn-primary" fontSize="24" text="Address book &#xf2b9;" tap="openBook">
+        </Button>
+
+        <!-- Solid address book icon -->
+        <Button class="fas btn tbn-primary" fontSize="24" text="Address book &#xf2b9;" tap="openBook">
+        </Button>
+
+        <!-- Regular address book icon -->
+        <Button class="far btn tbn-primary" fontSize="24" text="Address book &#xf2b9;" tap="openBook">
+        </Button>
+
+        <Button tap="goToGithub" class="btn tbn-primary" fontSize="24">
+            <FormattedString>
+                <Span text="NativeScript "></Span>
+                <Span ios:text="&#xf179;" android:text="&#xf17b;" fontFamily="Font Awesome 5 Brands, fa-brands-400"></Span>
+            </FormattedString> 
+        </Button>
+	</StackLayout>
+</Page>
