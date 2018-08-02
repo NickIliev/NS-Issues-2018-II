@@ -1,0 +1,1 @@
+move the `TestObject.java` in `platforms/android/app/src/main/java/com/tns` and rebuild the app (without removing `platforms` folder)
