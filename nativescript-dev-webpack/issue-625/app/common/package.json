@@ -1,0 +1,6 @@
+{
+    "name": "ui-helper",
+    "main": "ui-helper",
+    "types": "ui-helper.d.ts",
+    "nativescript": {}
+}
