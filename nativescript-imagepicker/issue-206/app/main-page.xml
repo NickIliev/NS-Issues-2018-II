@@ -1,13 +1,13 @@
-
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
-
-    <Page.actionBar>
-        <ActionBar title="My App" icon="" class="action-bar">
-        </ActionBar>
-    </Page.actionBar>
+	<Page.actionBar>
+		<ActionBar title="My App" icon="" class="action-bar">
+		</ActionBar>
+	</Page.actionBar>
 
     <StackLayout class="p-20">
-        <Label text="Tap the button" class="h1 text-center"/>
-        <Button text="pickAndConvert" tap="pickAndConvert" class="btn btn-primary btn-active"/>
+        <Label text="Tap the button" class="h1 text-center" />
+        <Button text="pickAndConvert" tap="pickAndConvert" class="btn btn-primary btn-active" />
+        <Label text="{{ base64img }}" textWrap="true" />
     </StackLayout>
+
 </Page>
