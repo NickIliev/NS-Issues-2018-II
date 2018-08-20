@@ -10,6 +10,20 @@
 		<Label class="fab" style="font-size: 50; color: black" text="&#xf09b;">
 		</Label>
 
+
+
+<!-- fas map-marked-alt -->
+<Label class="fas" style="font-size: 50; color: black" text="&#xf041;">
+</Label>
+
+<!-- WONT WORK far map-marked-alt -->
+<Label class="far" style="font-size: 50; color: black" text="&#xf041;">
+</Label>
+
+<!-- WONT WORK with fab map-marked-alt -->
+<Label class="fab" style="font-size: 50; color: black" text="&#xf041;">
+</Label>
+
         <!-- No brands icon -->
         <Button class="fab btn tbn-primary" fontSize="24" text="Address book &#xf2b9;" tap="openBook">
         </Button>
