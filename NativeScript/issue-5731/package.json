@@ -6,13 +6,13 @@
 	"nativescript": {
 		"id": "org.nativescript.issue5731",
 		"tns-android": {
-			"version": "4.2.0-2018-07-03-01"
+			"version": "4.2.0"
 		}
 	},
 	"dependencies": {
 		"animate.css": "^3.6.1",
 		"nativescript-theme-core": "~1.0.4",
-		"tns-core-modules": "^4.2.0-2018-07-03-02"
+		"tns-core-modules": "^4.2.0"
 	},
 	"devDependencies": {
 		"babel-traverse": "6.4.5",
