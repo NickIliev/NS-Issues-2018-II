@@ -1,0 +1,13 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" navigatingTo="navigatingTo" class="page">
+
+	<GridLayout class="p-20">
+		<lv:RadListView items="{{ dataItems }}" >
+
+        <lv:RadListView.itemTemplate>
+            <StackLayout orientation="vertical">
+                <Label fontSize="20" text="{{ $value }}"/>
+            </StackLayout>
+        </lv:RadListView.itemTemplate>
+    </lv:RadListView>
+	</GridLayout>
+</Page>
