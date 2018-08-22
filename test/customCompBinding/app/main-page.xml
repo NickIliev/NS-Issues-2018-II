@@ -1,0 +1,7 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page" 
+      xmlns:comps="components">
+
+    <!-- The binding context of the current page can be accessed in the custom component (as demonstrated) -->
+    <comps:my-toolbar />
+</Page>
