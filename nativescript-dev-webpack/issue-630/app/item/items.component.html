@@ -6,7 +6,7 @@
 <StackLayout class="page">
     <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
-            <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
+            <Label [nsRouterLink]="['/item', item.id]" [text]="'Name: ' + item.name"
                 class="list-group-item h1"></Label>
         </ng-template>
     </ListView>
