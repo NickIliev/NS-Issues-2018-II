@@ -1,2 +1,11 @@
 <!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
-<page-router-outlet></page-router-outlet>
+<!-- <page-router-outlet></page-router-outlet> -->
+
+<TabView class="tab-view">
+    <StackLayout *tabItem="{title: 'Tab1'}">
+        <page-router-outlet></page-router-outlet>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'Tab2'}">
+        <Label text="MAIN PAGE"   textWrap="true" class="h1"></Label>
+    </StackLayout>
+</TabView>

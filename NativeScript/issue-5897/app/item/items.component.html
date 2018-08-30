@@ -1,15 +1,8 @@
 
-<ActionBar class="action-bar">
-    <ActionItem icon="res://logo" [nsRouterLink]="['/map']" title="Map"></ActionItem>
-</ActionBar>
 
-<GridLayout>
-    <TabView class="tab-view">
-        <StackLayout *tabItem="{title: 'Tab1', icon: 'res://icon'}">
-            <Label text="Open MAP Page" [nsRouterLink]="['/map']" textWrap="true" class="h2 text-center" backgroundColor="lightgray"></Label>
-        </StackLayout>
-        <StackLayout *tabItem="{title: 'Tab2', icon: 'res://icon'}">
-                <Label text="MAIN PAGE"   textWrap="true" class="h1"></Label>
-        </StackLayout>
-    </TabView>
-</GridLayout>
+<!-- <StackLayout> -->
+<StackLayout>
+    <Button text="navigate" (tap)="navigate()"></Button>
+    <Label text="Open MAP Page" [nsRouterLink]="['/map']" textWrap="true" class="h2 text-center" backgroundColor="lightgray"></Label>
+</StackLayout>
+<!-- </StackLayout> -->

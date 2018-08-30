@@ -16,4 +16,5 @@ export class MapComponent implements OnInit {
     onMapReady() {
         console.log("onMapReady");
     }
+
 }

@@ -4,7 +4,6 @@ import { AppRoutingModule } from "./app.routing";
 import { AppComponent } from "./app.component";
 
 import { ItemsComponent } from "./item/items.component";
-import { MapComponent } from "./item/map.component";
 
 import { registerElement } from "nativescript-angular/element-registry";
 
@@ -27,8 +26,7 @@ registerElement("MapView", () => require("nativescript-google-maps-sdk").MapView
     ],
     declarations: [
         AppComponent,
-        ItemsComponent,
-        MapComponent
+        ItemsComponent
     ],
     schemas: [
         NO_ERRORS_SCHEMA

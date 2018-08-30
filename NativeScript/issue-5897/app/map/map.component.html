@@ -1,0 +1,7 @@
+<!-- <ActionBar title="Map" class="action-bar">
+    <ActionItem icon="res://logo" [nsRouterLink]="['/items']" title="Main"></ActionItem>
+</ActionBar> -->
+
+<GridLayout rows="400" >
+    <MapView row="0" (mapReady)="onMapReady($event)" backgroundColor="lightgray"></MapView>
+</GridLayout>
