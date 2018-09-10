@@ -2,7 +2,6 @@ import { EventData } from 'data/observable';
 import { Page } from 'ui/page';
 import * as app from "tns-core-modules/application";
 
-
 export function navigatingTo(args: EventData) {
     let page = <Page>args.object;
 
