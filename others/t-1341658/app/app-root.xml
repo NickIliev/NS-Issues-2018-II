@@ -1,0 +1,56 @@
+<nsDrawer:RadSideDrawer id="sideDrawer" xmlns:nsDrawer="nativescript-ui-sidedrawer" >
+    <nsDrawer:RadSideDrawer.drawerTransition>
+        <nsDrawer:SlideInOnTopTransition/>
+    </nsDrawer:RadSideDrawer.drawerTransition>
+ 
+    <nsDrawer:RadSideDrawer.drawerContent>
+        <GridLayout rows="auto, *" class="sidedrawer sidedrawer-left">
+            <StackLayout class="sidedrawer-header">
+                <Label class="sidedrawer-header-brand" text="User Name" />
+                <Label class="footnote" text="username@mail.com" />
+            </StackLayout>
+ 
+            <ScrollView row="1">
+                <StackLayout class="sidedrawer-content">
+                    <GridLayout route="tabs/first-page" title="Home" tap="navigateInFirstTab"> <!-- navigateInFirstTab to navigate in the first tab -->
+                        <Label text="Load first-page in the 1st TAB" class="p-10 m-t-20 text-center" textWrap="true" />
+                    </GridLayout>
+ 
+                    <GridLayout route="tabs/second-page" title="Browse" tap="navigateInFirstTab">
+                        <Label text="Load second-page in the 1st TAB" class="p-10 m-t-20 text-center"  textWrap="true"/>
+                    </GridLayout>
+ 
+                    <GridLayout route="tabs/first-page" title="Search" tap="navigateInSecondTab"> <!-- navigateInSecondTab to navigate in the second tab -->
+                        <Label text="Load first-page in the 2nd TAB" class="p-10 m-t-20 text-center" textWrap="true" />
+                    </GridLayout>
+ 
+                    <GridLayout route="tabs/second-page" title="Featured" tap="navigateInSecondTab">
+                        <Label text="Load second-page in the 2nd TAB" class="p-10 m-t-20 text-center" textWrap="true" />
+                    </GridLayout>
+
+                    <GridLayout route="tabs/third-page" title="Settings" tap="navigateInSecondTab">
+                        <Label text="Load third-page in the 2nd TAB" class="p-10 m-t-20 text-center" textWrap="true" />
+                    </GridLayout>
+                </StackLayout>
+            </ScrollView>
+        </GridLayout>
+    </nsDrawer:RadSideDrawer.drawerContent>
+ 
+    <nsDrawer:RadSideDrawer.mainContent>
+        <TabView androidTabsPosition="bottom" selectedTabTextColor="red" id="tabViewContainer" loaded="onTabLoaded">
+            <TabView.items>
+                <TabViewItem  title="Tab 1">
+                    <TabViewItem.view>
+                        <Frame id="first-tab-frame" defaultPage="tabs/home-page"></Frame>
+                    </TabViewItem.view>
+                </TabViewItem>
+                <TabViewItem title="Tab 2">
+                    <TabViewItem.view>
+                        <Frame id="second-tab-frame"  defaultPage="tabs/home-page"></Frame>
+                    </TabViewItem.view>
+                </TabViewItem>
+            </TabView.items>
+        </TabView>
+         
+    </nsDrawer:RadSideDrawer.mainContent>
+</nsDrawer:RadSideDrawer>
