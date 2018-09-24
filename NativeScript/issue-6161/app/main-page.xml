@@ -6,12 +6,12 @@
         </ActionBar>
     </Page.actionBar>
 
-    <StackLayout class="p-20">
+    <StackLayout class="p-20" backgroundColor="green">
         <Label text="Tap the button" class="h1 text-center"/>
         <Button text="TAP" tap="{{ onTap }}" class="btn btn-primary btn-active"/>
         <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
 
-        <TextView hint="" formattedText="{{ answer }}" editable="false" />
+        <TextView hint="" formattedText="{{ answer }}" editable="false" fontSize="16" textWrap="true" />
         
     </StackLayout>
 </Page>

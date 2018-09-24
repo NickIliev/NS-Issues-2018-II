@@ -1,0 +1,15 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" loaded="onLoaded" navigatedTo="onNavigatedTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <GridLayout rows="*, *, auto" class="p-20">
+        <ListPicker row="0" items="{{ ticketListPicker }}" loaded="updatePrice" selectedIndex="{{ selectedIndex }}"></ListPicker>
+        <Label row="1" text="{{ price }}" textWrap="true"  verticalAlignment="middle" horizontalAlignment="center" fontSize="40"/>
+        <Button row="2" text="navigate to sub page" tap="onTap" />
+    </GridLayout>
+
+</Page>

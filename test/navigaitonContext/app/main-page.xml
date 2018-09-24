@@ -1,0 +1,8 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <StackLayout class="p-20">
+        <Label text="Tap the button to navigate to sub-page and pass the context" class="h1 text-center"/>
+        <Button text="Navigate" tap="navigate" class="btn btn-primary btn-active"/>
+    </StackLayout>
+</Page>

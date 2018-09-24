@@ -1,0 +1,19 @@
+// Add your native dependencies here:
+
+dependencies {
+  compile "com.google.android.gms:play-services-base:15.0.1"
+}
+
+
+android {  
+  defaultConfig {  
+    generatedDensities = []
+    applicationId = "org.nativescript.testGoogleServices"  
+  }  
+  aaptOptions {  
+    additionalParameters "--no-version-vectors"  
+  }  
+  project.ext {
+    googlePlayServicesVersion = "15.0.1"
+  } 
+} 

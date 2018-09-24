@@ -7,5 +7,5 @@ if ((<any>global).TNS_WEBPACK) {
     const context = (<any>require).context("~/", true, /(root|page|fragment)\.(xml|css|js|ts|scss|less|sass)$/);
     global.registerWebpackModules(context);
 
-    global.registerModule("components/some-fragment", () => require("./components/some-fragment"));
+    // global.registerModule("components/some-fragment", () => require("./components/some-fragment"));
 }

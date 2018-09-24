@@ -10,11 +10,9 @@ export function onPageLoaded(args: EventData) {
     let page = <Page>args.object;
     const stack = <StackLayout>page.getViewById("stack");
 
-    const absoluteLayout = new AbsoluteLayout();
+    
   
-    const button1 = new Button();
-    button1.text = "Left: 10, Top: 5";
-    button1.backgroundColor = "#0099CC";
+    
     const button2 = new Button();
     button2.text = "Left: 30, Top: 80";
     button2.backgroundColor = "#C3C3E5";
@@ -25,13 +23,18 @@ export function onPageLoaded(args: EventData) {
     button4.text = "Left: 70, Top: 150";
     button4.backgroundColor = "#8C489F";
   
-    absoluteLayout.addChild(button1);
-    absoluteLayout.addChild(button2);
-    absoluteLayout.addChild(button3);
-    absoluteLayout.addChild(button4);
-  
+    const myAbs = new AbsoluteLayout();
+    const button1 = new Button();
+    button1.text = "Left: 10, Top: 5";
+    button1.backgroundColor = "#0099CC";
+    myAbs.addChild(button1);
     AbsoluteLayout.setLeft(button1, 10);
     AbsoluteLayout.setTop(button1, 5);
+
+    myAbs.addChild(button2);
+    myAbs.addChild(button3);
+    myAbs.addChild(button4);
+
     AbsoluteLayout.setLeft(button2, 30);
     AbsoluteLayout.setTop(button2, 80);
     AbsoluteLayout.setLeft(button3, 150);
@@ -39,5 +42,5 @@ export function onPageLoaded(args: EventData) {
     AbsoluteLayout.setLeft(button4, 70);
     AbsoluteLayout.setTop(button4, 150);
   
-    stack.addChild(absoluteLayout);
+    stack.addChild(myAbs);
 }

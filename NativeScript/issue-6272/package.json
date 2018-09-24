@@ -1,0 +1,58 @@
+{
+  "nativescript": {
+    "id": "org.nativescript.issue6272",
+    "tns-android": {
+      "version": "4.2.0"
+    },
+    "tns-ios": {
+      "version": "4.3.0-2018-09-13-01"
+    }
+  },
+  "description": "NativeScript Application",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "repository": "<fill-your-repository-here>",
+  "dependencies": {
+    "@angular/animations": "~6.1.0",
+    "@angular/common": "~6.1.0",
+    "@angular/compiler": "~6.1.0",
+    "@angular/core": "~6.1.0",
+    "@angular/forms": "~6.1.0",
+    "@angular/http": "~6.1.0",
+    "@angular/platform-browser": "~6.1.0",
+    "@angular/platform-browser-dynamic": "~6.1.0",
+    "@angular/router": "~6.1.0",
+    "moment": "^2.18.1",
+    "nativescript-angular": "~6.1.0",
+    "nativescript-appversion": "^1.4.1",
+    "nativescript-bitmap-factory": "^1.7.1",
+    "nativescript-feedback": "^1.2.0",
+    "nativescript-geolocation": "^4.2.6",
+    "nativescript-imagepicker": "^6.0.2",
+    "nativescript-iqkeyboardmanager": "^1.2.0",
+    "nativescript-ngx-slides": "^1.0.6",
+    "nativescript-platform-css": "^1.6.6",
+    "nativescript-plugin-firebase": "^6.8.1",
+    "nativescript-social-share": "^1.5.0",
+    "nativescript-store-update": "^1.0.2",
+    "nativescript-theme-core": "~1.0.4",
+    "nativescript-ui-listview": "^3.6.1",
+    "nativescript-web-image-cache": "^4.2.6",
+    "reflect-metadata": "~0.1.8",
+    "rxjs": "~6.0.0",
+    "rxjs-compat": "^6.2.1",
+    "tns-core-modules": "next",
+    "zone.js": "^0.8.26"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "~6.1.0",
+    "@ngtools/webpack": "~6.1.0",
+    "babel-traverse": "6.26.0",
+    "babel-types": "6.26.0",
+    "babylon": "6.18.0",
+    "lazy": "1.0.11",
+    "nativescript-dev-typescript": "~0.7.0",
+    "nativescript-dev-webpack": "^0.15.1",
+    "typescript": "~2.7.2"
+  },
+  "readme": "NativeScript Application"
+}

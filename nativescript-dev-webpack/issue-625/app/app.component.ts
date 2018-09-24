@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit() {
         if (isIOS) {
-            uiHelper.ios.setStatusBarColor("red");
+            uiHelper.ios.setStatusBarColor("green");
         }
     }
  }

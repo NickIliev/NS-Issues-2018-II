@@ -5,6 +5,7 @@ import { requestPermissions, takePicture } from "nativescript-camera";
 import * as fs from "tns-core-modules/file-system";
 import * as enums from "ui/enums";
 import { fromAsset } from "image-source";
+import { ImageAsset } from "image-asset";
 
 declare let UIImage: any;
 
@@ -20,7 +21,10 @@ export class ItemsComponent {
     }
 
     onTakePhoto() {
-        takePicture().then((imageAsset: any) => {
+        takePicture().then((imageAsset: ImageAsset) => {
+
+            console.log(imageAsset.ios);
+
             fromAsset(imageAsset).then((source) => {
     
                 let folder = fs.knownFolders.documents();
@@ -30,7 +34,8 @@ export class ItemsComponent {
     
                 source.saveToFile(path, "jpeg");
                 const currentImage = UIImage.imageWithContentsOfFile(path);
-                console.log('orientation', currentImage.imageOrientation); // -> allways return 0
+                console.log("currentImage: ", currentImage);
+                console.log('orientation: ', currentImage.imageOrientation); // -> allways return 0
             });
         });
     }

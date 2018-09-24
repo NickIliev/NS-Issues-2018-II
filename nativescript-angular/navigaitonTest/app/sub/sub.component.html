@@ -1,0 +1,19 @@
+<ActionBar title="">
+        <ActionItem ios.position="right" >
+            <StackLayout>
+                <Label text="SUB PAGE" class="action-bar-title" textAlignment="center"></Label>
+            </StackLayout>
+        </ActionItem>
+    </ActionBar>
+    <GridLayout>
+        <ScrollView >
+            <StackLayout class="p-b-16">
+                <ActivityIndicator class="m-t-30 m-b-20"></ActivityIndicator>
+                <Image src="res://logo"></Image>
+                <Label text="some content" textWrap="true"></Label>
+            </StackLayout>
+        </ScrollView>
+        <DockLayout class="dock" verticalAlignment="bottom">
+            <Label text="toolbar" textWrap="true"></Label>
+        </DockLayout>
+    </GridLayout>

@@ -1,0 +1,6 @@
+﻿@import '~nativescript-theme-core/css/core.light.css';
+
+.hidden {
+    color: white;
+    visibility: collapse;
+}

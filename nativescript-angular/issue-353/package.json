@@ -7,6 +7,9 @@
     "id": "org.nativescript.issue353",
     "tns-android": {
       "version": "4.2.0-rc-2018-07-27-01"
+    },
+    "tns-ios": {
+      "version": "4.1.0"
     }
   },
   "dependencies": {

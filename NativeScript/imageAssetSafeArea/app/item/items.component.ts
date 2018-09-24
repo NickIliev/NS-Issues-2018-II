@@ -7,9 +7,8 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ItemsComponent {
     imageUri: string;
- s
+ 
     onTap() {
-        console.log("tap");
         this.imageUri = "res://icon";
     }
 }

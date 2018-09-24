@@ -1,0 +1,17 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <GridLayout rows="*" columns="*">
+        <ListView items="{{ pictures }}">
+            <ListView.itemTemplate>
+                <GridLayout rows="160, auto">
+                    <Image row="0" src="{{ 'res://' + photo }}" stretch="aspectFill" /> 
+                    <StackLayout row="1" class="recipeContainer">
+                        <Label text="{{ title }}" class="recipeTitle"/>
+                        <Label text="{{ author, 'by ' + author }}" class="recipeAuthor"/>
+                    </StackLayout>
+                </GridLayout>
+            </ListView.itemTemplate>
+        </ListView>
+    </GridLayout>
+</Page>

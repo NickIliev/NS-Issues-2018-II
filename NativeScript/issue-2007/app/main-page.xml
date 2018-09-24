@@ -1,0 +1,6 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+	<StackLayout backgroundColor="orangered">
+		<ActivityIndicator id="ai" busy="true" class="hidden" />
+		<Button text="TAP" tap="onTap" />
+	</StackLayout>
+</Page>
