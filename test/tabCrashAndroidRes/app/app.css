@@ -1,0 +1,28 @@
+
+@import '~nativescript-theme-core/css/forest.css';
+
+.title {
+   text-align: center;
+   height: 40;
+   margin-top: 15;
+   font-weight: 400;
+}
+
+.title#selected {
+    font-weight: 500;
+}
+
+.style1 {
+    background-color: white;
+}
+
+.style2 {
+    border-bottom-width: 2;
+    border-bottom-color: blue;
+}
+
+.style3 {
+    border-width: 2;
+    border-color: blue;
+    border-radius: 20;
+}

@@ -1,0 +1,6 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+    <GridLayout rows="*" columns="*">
+        <WebView loaded="onWebViewLoaded" src="http://live.indostreamserver.com:8054/stream/7/" />
+    </GridLayout>
+</Page>

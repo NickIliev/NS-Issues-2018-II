@@ -1,0 +1,5 @@
+<Page actionBarHidden="true" loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+	<GridLayout backgroundColor="#e040fb">
+		<Label verticalAlignment="center" class="h2 text-center" text="Profile page works" textWrap="true"></Label>
+	</GridLayout>
+</Page>

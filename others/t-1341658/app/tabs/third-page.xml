@@ -1,0 +1,5 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
+    <GridLayout backgroundColor="Blue">
+        <Label text="THIRD Page" textWrap="true" class="h2 text-center"  color="white"/>
+    </GridLayout>
+</Page>

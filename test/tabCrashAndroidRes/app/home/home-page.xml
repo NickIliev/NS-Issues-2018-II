@@ -1,0 +1,23 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+	<!-- 
+		Made with ❤️ by MultiShiv19 for {N} Community 
+		Visit https://nstudio.io
+	-->
+	<ActionBar title="Fancy tab selection" class="action-bar">
+	</ActionBar>
+	<GridLayout rows="auto, *">
+		<GridLayout backgroundColor="#EBEBEB" row="0" columns="*, *, *, *, *">
+			<!-- Also Try Style 2 and 3, you can make many different styles -->
+			<Label tap="tabTap" id="selector" class="style1" col="0"></Label>
+
+			<Label tap="tabTap" id="selected" class="title" col="0" text="Home"></Label>
+			<Label tap="tabTap" class="title" col="1" text="About"></Label>
+			<Label tap="tabTap" class="title" col="2" text="Contact"></Label>
+			<Label tap="tabTap" class="title" col="3" text="Profile"></Label>
+			<Label tap="tabTap" class="title" col="4" text="Settings"></Label>
+		</GridLayout>
+		<GridLayout row="1">
+			<Frame id="frame" defaultPage="home/home-tab/home-tab-page"></Frame>
+		</GridLayout>
+	</GridLayout>
+</Page>

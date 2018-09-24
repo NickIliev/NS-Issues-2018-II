@@ -1,0 +1,7 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
+    <GridLayout backgroundColor="green">
+        <Label text="FIRST Page" textWrap="true" class="h2 text-center"  color="white"/>
+    </GridLayout>
+</Page>
+
+
