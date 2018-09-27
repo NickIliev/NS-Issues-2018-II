@@ -1,10 +1,9 @@
 
-import { EventData } from 'data/observable';
-import { Page } from 'ui/page';
-import { HelloWorldModel } from './main-view-model';
-import * as http from "http";
+import { EventData, Observable } from 'tns-core-modules/data/observable';
+import { Page } from 'tns-core-modules/ui/page';
+import * as http from "tns-core-modules/http";
 
-const vm = new HelloWorldModel();
+const vm = new Observable();
 let image: any;
 
 export function navigatingTo(args: EventData) {
@@ -35,19 +34,18 @@ export function navigatingTo(args: EventData) {
     //     console.log("err: ", err);
     // })
 
-http.request(options).then(res => {
-    console.log("request");
-    console.dir(res);
-    console.dir(res.content.raw);
+    http.request(options).then(res => {
+        console.log("request");
+        console.dir(res);
 
-    res.content.toImage().then(img => {
-        console.log(img);
-        image = img;
-        vm.set("myLogo", image);
+        res.content.toImage().then(img => {
+            console.log(img);
+            image = img;
+            vm.set("myLogo", image);
+        })
+
+    }).catch(err => {
+        console.log("err: ", err);
     })
-
-}).catch(err => {
-    console.log("err: ", err);
-})
 
 }
