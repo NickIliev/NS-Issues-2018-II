@@ -1,0 +1,21 @@
+{
+    "nativescript": {
+        "id": "org.nativescript.t1344366",
+        "tns-android": {
+            "version": "4.2.0"
+        },
+        "tns-ios": {
+            "version": "4.2.0"
+        }
+    },
+    "description": "NativeScript Application",
+    "license": "SEE LICENSE IN <your-license-filename>",
+    "repository": "<fill-your-repository-here>",
+    "dependencies": {
+        "nativescript-mediafilepicker": "^2.0.11",
+        "nativescript-ui-sidedrawer": "~4.3.0",
+        "nativescript-theme-core": "~1.0.4",
+        "tns-core-modules": "~4.2.0"
+    },
+    "readme": "NativeScript Application"
+}
