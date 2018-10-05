@@ -1,0 +1,22 @@
+{
+    "nativescript": {
+        "id": "org.nativescript.issue1183",
+        "tns-android": {
+            "version": "5.0.0-2018-09-28-195532-01"
+        }
+    },
+    "main": "app.js",
+    "description": "NativeScript Application",
+    "license": "SEE LICENSE IN <your-license-filename>",
+    "repository": "<fill-your-repository-here>",
+    "dependencies": {
+        "nativescript-plugin-firebase": "^7.1.2",
+        "nativescript-theme-core": "~1.0.4",
+        "tns-core-modules": "next"
+    },
+    "devDependencies": {
+        "nativescript-dev-typescript": "~0.7.0",
+        "typescript": "~2.7.2"
+    },
+    "readme": "NativeScript Application"
+}
