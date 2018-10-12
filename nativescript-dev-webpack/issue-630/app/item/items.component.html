@@ -1,13 +1,11 @@
 
-<ActionBar title="My App" class="action-bar">
+<ActionBar title="My Really Awe App" class="action-bar">
 </ActionBar>
-
 
 <StackLayout class="page">
     <ListView [items]="items" class="list-group">
         <ng-template let-item="item">
-            <Label [nsRouterLink]="['/item', item.id]" [text]="'Name: ' + item.name"
-                class="list-group-item h1"></Label>
+            <Label [nsRouterLink]="['/item', item.id]" [text]="'name : ' + item.name" class="h1 lbl"></Label>
         </ng-template>
     </ListView>
 </StackLayout>

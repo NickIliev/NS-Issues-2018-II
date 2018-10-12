@@ -1,2 +1,5 @@
 <!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
-<page-router-outlet></page-router-outlet>
+<ActionBar title="My App"></ActionBar>
+    <StackLayout orientation="vertical">
+            <Label [text]="message" (tap)="onTap()"></Label>
+    </StackLayout>

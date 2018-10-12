@@ -36,21 +36,20 @@
         </GridLayout>
     </nsDrawer:RadSideDrawer.drawerContent>
  
-    <nsDrawer:RadSideDrawer.mainContent>
-        <TabView androidTabsPosition="bottom" selectedTabTextColor="red" id="tabViewContainer" loaded="onTabLoaded">
-            <TabView.items>
-                <TabViewItem  title="Tab 1">
-                    <TabViewItem.view>
-                        <Frame id="first-tab-frame" defaultPage="tabs/home-page"></Frame>
-                    </TabViewItem.view>
-                </TabViewItem>
-                <TabViewItem title="Tab 2">
-                    <TabViewItem.view>
-                        <Frame id="second-tab-frame"  defaultPage="tabs/home-page"></Frame>
-                    </TabViewItem.view>
-                </TabViewItem>
-            </TabView.items>
-        </TabView>
-         
-    </nsDrawer:RadSideDrawer.mainContent>
+<nsDrawer:RadSideDrawer.mainContent>
+    <TabView androidTabsPosition="bottom" selectedTabTextColor="red" id="tabViewContainer" loaded="onTabLoaded">
+        <TabView.items>
+            <TabViewItem  title="Tab 1">
+                <TabViewItem.view>
+                    <Frame id="first-tab-frame" defaultPage="tabs/home-page"></Frame>
+                </TabViewItem.view>
+            </TabViewItem>
+            <TabViewItem title="Tab 2">
+                <TabViewItem.view>
+                    <Frame id="second-tab-frame" defaultPage="tabs/home-page"></Frame>
+                </TabViewItem.view>
+            </TabViewItem>
+        </TabView.items>
+    </TabView>
+</nsDrawer:RadSideDrawer.mainContent>
 </nsDrawer:RadSideDrawer>

@@ -3,8 +3,11 @@ import * as utils from "utils/utils";
 import * as frame from "ui/frame";
 import { View } from "ui/core/view";
 
-let loaderView: android.app.ProgressDialog;
+export module ios {
 
+}
+
+let loaderView: android.app.ProgressDialog;
 function onBackButtonTap(args: application.AndroidActivityBackPressedEventData) {
     const page = frame.topmost().currentPage;
     if (page.hasListeners(application.AndroidApplication.activityBackPressedEvent)) {

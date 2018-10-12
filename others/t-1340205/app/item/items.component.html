@@ -1,0 +1,15 @@
+
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+<GridLayout>
+    <RadListView [items]="items">
+        <ng-template tkListItemTemplate let-item="item">
+            <StackLayout orientation="vertical" [nsRouterLink]="['/item', item.id]" padding="20">
+                <Label [text]="item.id" fontSize="40" textWrap="true"></Label>
+                <Label [text]="item.name" backgroundColor="lightgray"  class="list-group-item"></Label>
+                <Image src="res://icon" width="50" height="50"></Image> 
+            </StackLayout>
+        </ng-template>
+    </RadListView>
+</GridLayout>

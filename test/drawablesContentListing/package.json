@@ -6,12 +6,12 @@
 	"nativescript": {
 		"id": "org.nativescript.drawablesContentListing",
 		"tns-android": {
-			"version": "4.1.1"
+			"version": "5.0.0-2018-10-05-115742-01"
 		}
 	},
 	"dependencies": {
 		"nativescript-theme-core": "~1.0.4",
-		"tns-core-modules": "~4.1.0"
+		"tns-core-modules": "next"
 	},
 	"devDependencies": {
 		"babel-traverse": "6.26.0",

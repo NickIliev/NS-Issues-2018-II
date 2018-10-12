@@ -1,0 +1,20 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <GridLayout rows="*" columns="*">
+        <lv:RadListView items="{{ items }}" >
+             <lv:RadListView.itemTemplate>
+                <StackLayout orientation="vertical">
+                    <GridLayout rows="*" columns="*" padding="15" fontSize="18">
+                        <Label text="{{ mainCourse, mainCourse | extrait }}" textWrap="true"/>
+                    </GridLayout>
+                </StackLayout>
+            </lv:RadListView.itemTemplate>
+        </lv:RadListView>
+    </GridLayout>
+</Page>

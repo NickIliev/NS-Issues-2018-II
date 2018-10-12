@@ -10,7 +10,7 @@
         <ListView items="{{ items }}"  loaded="onLoaded" itemLoading="onItemLoading" itemTap="onItemTap">
             <ListView.itemTemplate>
                 <GridLayout rows="*" columns="*">
-                    <Image row="0" src="{{ photo ? 'res://' + photo : 'res://'}}" height="160" stretch="aspectFill" />
+                    <Image row="0" src="{{ 'res://' + photo }}" height="160" stretch="aspectFill" />
                 </GridLayout>
             </ListView.itemTemplate>
         </ListView>

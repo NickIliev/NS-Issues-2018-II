@@ -1,0 +1,11 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <StackLayout class="p-20" backgroundColor="orangered">
+        <Label text="{{ nested.client }}" class="h2 text-center" textWrap="true"/>
+        
+        <TextView text="{{ nested.client }}" class="h2 text-center"  editable="true" />
+    
+        <Label text="{{ favoriteColor.hisColor }}" class="h2 text-center" textWrap="true"/>
+    </StackLayout>
+    
+</Page>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular/router";
 import { Page} from "tns-core-modules/ui/page";
 
@@ -7,13 +7,11 @@ import { Page} from "tns-core-modules/ui/page";
     moduleId: module.id,
     templateUrl: "./items.component.html",
 })
-export class ItemsComponent implements OnInit {
+export class ItemsComponent {
 
     constructor(private _routerExtensions: RouterExtensions, private _page: Page) {
         this._page.actionBarHidden = true;
      }
-
-    ngOnInit(): void { }
 
     navigate() {
         this._routerExtensions.navigate(['/map']);

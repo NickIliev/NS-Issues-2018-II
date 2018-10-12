@@ -18,13 +18,14 @@ export function getImage() {
         return context.present();
     }).then((selection) => {
         selection.forEach((selectedImageAsset) => {
+            selectedImageAsset.nativeImage
             console.dir(selectedImageAsset.options)
 
             let options: ImageAssetOptions = selectedImageAsset.options;
 
             let source = new ImageSource();
             source.fromAsset(selectedImageAsset).then((source) => {
-                console.log(source.width + "x" + source.height); // <-- 3000 x 3000
+                console.log(source.width + "x" + source.height); // <-- 2880 x 2160
             })
         })
     }, (error) => {

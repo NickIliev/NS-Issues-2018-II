@@ -1,0 +1,22 @@
+<Page class="page"
+  showingModally="showingModally"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd" android:height="350">
+     <ScrollView>
+    <GridLayout padding="10">
+        <Border row="1" borderRadius="1" borderWidth="1" borderColor="#d3d3d3" borderRightWidth="3" borderBottomWidth="3" style="margin-top:5">
+            <GridLayout columns="*,1*" rows="auto,auto,auto,auto,10">
+                <Label row="0" col = "0" text="Test Key" textWrap="true" class="label font-weight-bold m-b-5" color="black" style="margin-top:10"></Label>
+                <Label row="0" col = "1" text="Test Value" textWrap="true" class="label font-weight-bold m-b-5" color="black" style="margin-top:10"></Label>
+               
+                <Button row="1" col = "0"  tap="hideText" text="Hide" textWrap="true" style="width:40%;background-color:#007acc;color:white;margin-top:15"></Button>
+                <Button row="1" col = "1"  text="Show" tap="showText" textWrap="true" style="width:40%;background-color:#007acc;color:white;margin-top:15"></Button>
+                <StackLayout row="2" colSpan = "2" style="margin-top:30" visibility="{{textVisibility}}">
+                    <Label text="Welcome" class="label font-weight-bold m-b-5" color="black"></Label>
+                </StackLayout>
+                 <Button row="3" col = "1"  text="Close" tap="onClose" textWrap="true" style="width:40%;background-color:#007acc;color:white;margin-top:15"></Button>
+            </GridLayout>
+        </Border>
+    </GridLayout>
+     </ScrollView>
+</Page>
