@@ -1,0 +1,12 @@
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+<GridLayout tkExampleTitle tkToggleNavButton>
+    <RadListView [items]="items" (loaded)="onListLoaded($event)">
+        <ng-template tkListItemTemplate let-item="item" let-i="index">
+            <StackLayout orientation="vertical" height="100" backgroundColor="orangered" margin="10" borderRadius="20">
+                <Label class="h2 text-center" color="white" verticalAlignment="center" [text]="'index: ' + i"></Label>
+            </StackLayout>
+        </ng-template>
+    </RadListView>
+</GridLayout>
