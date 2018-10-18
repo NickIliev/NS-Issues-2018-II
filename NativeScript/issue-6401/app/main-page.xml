@@ -1,0 +1,20 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <StackLayout class="p-20">
+        <Label text="Show loing 9press TAP)" class="h1 text-center"/>
+        <Button text="noHints" tap="noHints" class="btn btn-primary btn-active"/>
+        <Button text="onlyHints" tap="onlyHints" class="btn btn-primary btn-active"/>
+        <Button text="hintsAndValues" tap="hintsAndValues" class="btn btn-primary btn-active"/>
+        <Button text="mixedOptions" tap="mixedOptions" class="btn btn-primary btn-active"/>
+        <Button text="mixedOptionsNoMessage" tap="mixedOptionsNoMessage" class="btn btn-primary btn-active"/>
+        <!-- <Button text="noDefaultOptionsAtAll" tap="noDefaultOptionsAtAll" class="btn btn-primary btn-active"/> -->
+        <Button text="loginWithStrings" tap="loginWithStrings" class="btn btn-primary btn-active"/>
+        
+    </StackLayout>
+</Page>
