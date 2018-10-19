@@ -1,0 +1,11 @@
+Button {
+    border-radius: 10;
+    background-color:#1b1d1d;
+    color: #E8EAEB;
+    padding: 0 16 0 16;
+}
+
+Button:active {
+    background-color:#E8EAEB;
+    color: #1b1d1d;
+}

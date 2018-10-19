@@ -1,0 +1,6 @@
+﻿/* @import '~nativescript-theme-core/css/core.light.css'; */
+
+/* this global color style will affect the dialogs */
+Button {
+    color: #343838;
+}
