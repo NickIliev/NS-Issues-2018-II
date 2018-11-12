@@ -1,0 +1,70 @@
+{
+    "project_info": {
+      "project_number": "61367930050",
+      "firebase_url": "https://cosmos-databank.firebaseio.com",
+      "project_id": "cosmos-databank",
+      "storage_bucket": "cosmos-databank.appspot.com"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:61367930050:android:885811f46753dd67",
+          "android_client_info": {
+            "package_name": "org.nativescript.curiosity"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "61367930050-k7u7tvkmc8rjiv2kpdi2ieqm42vhoe46.apps.googleusercontent.com",
+            "client_type": 1,
+            "android_info": {
+              "package_name": "org.nativescript.curiosity",
+              "certificate_hash": "b8d1f568273c6a28e5d010c7e3c6ade773f3173c"
+            }
+          },
+          {
+            "client_id": "61367930050-3mmueggdmskbd2ja1ui5la63gn50o4ir.apps.googleusercontent.com",
+            "client_type": 1,
+            "android_info": {
+              "package_name": "org.nativescript.curiosity",
+              "certificate_hash": "ac7f8c71931601b3eb4850c242346c7721183282"
+            }
+          },
+          {
+            "client_id": "61367930050-llhdbd2lh051dgntqn40ght1kd9j3mh1.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyAmba0gddo76jgjRTWNe5Bl8BxNWu_mrVY"
+          }
+        ],
+        "services": {
+          "analytics_service": {
+            "status": 1
+          },
+          "appinvite_service": {
+            "status": 2,
+            "other_platform_oauth_client": [
+              {
+                "client_id": "61367930050-l0g01ube2po1jm17c5f0rtkaeocai0i9.apps.googleusercontent.com",
+                "client_type": 2,
+                "ios_info": {
+                  "bundle_id": "org.nativescript.curiosity"
+                }
+              },
+              {
+                "client_id": "61367930050-llhdbd2lh051dgntqn40ght1kd9j3mh1.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          },
+          "ads_service": {
+            "status": 2
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
