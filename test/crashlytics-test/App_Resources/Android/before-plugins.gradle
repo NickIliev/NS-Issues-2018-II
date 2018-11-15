@@ -1,0 +1,12 @@
+
+android {
+    
+}
+
+print("Before Plugins GRADLE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,")
+
+dependencies {
+    compile('com.crashlytics.sdk.android:crashlytics:2.9.6@aar') {
+        transitive = true;
+    }
+}

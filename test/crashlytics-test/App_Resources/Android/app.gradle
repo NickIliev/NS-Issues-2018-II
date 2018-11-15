@@ -9,9 +9,9 @@
 // e.g. project.ext.googlePlayServicesVersion = "15.0.1"
 // create a file named before-plugins.gradle in the current directory and place it there
 
+print(">>> APP GRADLE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,")
+
 android {    
-  buildToolsVersion "28.0.3"
-  compileSdkVersion 28
   defaultConfig {  
     generatedDensities = []
   }  
