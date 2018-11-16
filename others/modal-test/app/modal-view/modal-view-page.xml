@@ -8,3 +8,8 @@
     </GridLayout>
     <Button row="1" text="SingIn" tap="onLoginButtonTap" />
 </GridLayout>
+
+<!-- Scenario covering the dynamic resizong based on the content lenght -->
+<!-- <StackLayout shownModally="onShownModally" widht="200" backgroundColor="orangered" color="white">
+    <TextView text="{{ content }}" editable="false" />
+</StackLayout> -->
