@@ -1,0 +1,9 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd">
+    <Page.actionBar>
+        <ActionBar title="Modal Example"/>
+    </Page.actionBar>
+
+    <GridLayout rows="*, auto, *" columns="*">
+        <Button row="1" text="Open modal" tap="openModal" textWrap="true" />
+    </GridLayout>
+</Page>
