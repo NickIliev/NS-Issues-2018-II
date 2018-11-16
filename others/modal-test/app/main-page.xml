@@ -3,7 +3,7 @@
         <ActionBar title="Modal Example"/>
     </Page.actionBar>
 
-    <GridLayout rows="*, auto, *" columns="*">
+    <GridLayout rows="*, auto, *" columns="*" backgroundColor="lightblue">
         <Button row="1" text="Open modal" tap="openModal" textWrap="true" />
     </GridLayout>
 </Page>
