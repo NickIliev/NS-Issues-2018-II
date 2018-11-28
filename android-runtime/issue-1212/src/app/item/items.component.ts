@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChild } from "@angular/core";
-
+import * as geolocation from "nativescript-geolocation";
+import { Accuracy } from "tns-core-modules/ui/enums"; // used to describe at what accuracy the location should be get
 
 @Component({
     selector: "ns-items",
@@ -9,8 +10,12 @@ import { Component, OnInit, ElementRef, ViewChild } from "@angular/core";
 export class ItemsComponent {
     @ViewChild("MapView") mapView: ElementRef;
 
+    constructor() {
+        geolocation.enableLocationRequest();
+    }
+
     //Map events
-    onMapReady = (event) => {
+    onMapReady(event) {
         console.log("Map Ready");
     };
 }

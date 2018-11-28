@@ -6,7 +6,7 @@ import { AppComponent } from "./app.component";
 import { ItemsComponent } from "./item/items.component";
 import { ItemDetailComponent } from "./item/item-detail.component";
 
-import {registerElement} from "nativescript-angular/element-registry";
+import { registerElement } from "nativescript-angular/element-registry";
 
 // Important - must register MapView plugin in order to use in Angular templates
 registerElement("MapView", () => require("nativescript-google-maps-sdk").MapView);
