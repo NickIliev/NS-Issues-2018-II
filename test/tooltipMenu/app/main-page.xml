@@ -1,0 +1,14 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+
+    <StackLayout class="p-20 m-20">
+        <Label text="Tap the button or focus the TextField to trigger the tooltip" class="h1 text-center"/>
+        <Button text="Trigger Tooltip" tap="onTap" class="btn btn-primary btn-active"/>
+        <TextField loaded="tfLoaded"  hint="Or focus this field to trigger tooltip" class="h2 m-t-50" height="40" backgroundColor="whitesmoke" textWrap="true"/>
+    </StackLayout>
+</Page>
