@@ -1,0 +1,15 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:lv="nativescript-ui-listview" navigatingTo="navigatingTo" class="page">
+
+    <GridLayout rows="*" columns="*" backgroundColor="green">
+        <lv:RadListView items="{{ items }}"  loaded="onLoaded" itemLoading="onItemLoading" itemTap="onItemTap">
+            <lv:RadListView.itemTemplate>
+                <StackLayout orientation="horizontal" margin="10" padding="10" backgroundColor="orangered" color="white" height="100">
+                    <Label text="Sample Item" textWrap="true" />
+                    <Label text="{{ $value }}" textWrap="true" />
+                </StackLayout>
+            </lv:RadListView.itemTemplate>
+        </lv:RadListView>
+    </GridLayout>
+
+</Page>
