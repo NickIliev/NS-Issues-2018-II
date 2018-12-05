@@ -1,0 +1,57 @@
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+
+    <Page.actionBar>
+        <ActionBar title="Title" icon="" loaded="onActionBarLoaded">                    
+        </ActionBar>
+    </Page.actionBar>
+
+
+    
+        
+    <ScrollView id="root-view" scroll="onScroll">
+        <StackLayout>
+            <SearchBar hint="Search" visibility="{{ isSearchVisible ? 'visible' : 'collapsed' }}" margin="0" padding="0"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+            <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
+        </StackLayout>
+    </ScrollView>
+
+</Page>
