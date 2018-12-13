@@ -1,5 +1,8 @@
 import { Injectable } from "@angular/core";
 
+declare let android: any;
+declare let com: any;
+
 @Injectable()
 export class ItemService {
     private items = new Array<any>(
@@ -28,7 +31,7 @@ export class ItemService {
     );
 
     async uploadImages() {
-        console.log("upload images with ASYNC method");
+        await console.log("upload images with ASYNC method");
     }
 
     getItems(): any[] {
@@ -38,4 +41,8 @@ export class ItemService {
     getItem(id: number): any {
         return this.items.filter(item => item.id === id)[0];
     }
+}
+
+export class MyView extends android.view.View {
+
 }
