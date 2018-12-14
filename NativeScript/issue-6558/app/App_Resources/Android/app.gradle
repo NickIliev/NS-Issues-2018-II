@@ -1,0 +1,15 @@
+// Add your native dependencies here:
+
+// Uncomment to add recyclerview-v7 dependency
+dependencies {
+	implementation("androidx.appcompat:appcompat:1.0.2")
+}
+
+android {  
+  defaultConfig {  
+    generatedDensities = []
+  }  
+  aaptOptions {  
+    additionalParameters "--no-version-vectors"  
+  }  
+} 

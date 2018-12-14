@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { ModalDialogParams } from "nativescript-angular/modal-dialog";
+import { Page } from "tns-core-modules/ui/page";
 
 @Component({
     selector: "ns-modals",
@@ -8,8 +9,11 @@ import { ModalDialogParams } from "nativescript-angular/modal-dialog";
 })
 export class ModalComponent {
 
-    constructor(private _params: ModalDialogParams) {
-        
+    constructor(private _params: ModalDialogParams, private _page: Page) {
+        this._page.on("unloaded", () => {
+            console.log(">>>>>>>>>>>>>>>> PAGE unloaded >>>>>>>>>>>>>");
+            this._params.closeCallback("[ngOnDestroy] Happy New Year!!!");
+        })
     }
 
     ngOnInit() {

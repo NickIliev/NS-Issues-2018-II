@@ -1,0 +1,33 @@
+{
+    "nativescript": {
+        "id": "org.nativescript.issue720",
+        "tns-ios": {
+            "version": "5.0.0"
+        },
+        "tns-android": {
+            "version": "5.1.0"
+        }
+    },
+    "description": "NativeScript Application",
+    "license": "SEE LICENSE IN <your-license-filename>",
+    "repository": "<fill-your-repository-here>",
+    "dependencies": {
+        "crypto-js": "^3.1.9-1",
+        "moment": "^2.22.2",
+        "nativescript-directions": "^1.3.0",
+        "nativescript-dom": "^2.0.2",
+        "nativescript-geolocation": "^4.3.1",
+        "nativescript-google-maps-sdk": "^2.6.1",
+        "nativescript-image-swipe": "^3.0.0",
+        "nativescript-loading-screen": "^1.0.6",
+        "nativescript-pdf-view": "^2.0.1",
+        "nativescript-phone": "^1.4.0",
+        "nativescript-theme-core": "^1.0.4",
+        "nativescript-xml2js": "^0.5.2",
+        "tns-core-modules": "^5.1.0"
+    },
+    "devDependencies": {
+        "nativescript-dev-webpack": "~0.18.0"
+    },
+    "readme": "NativeScript Application"
+}
