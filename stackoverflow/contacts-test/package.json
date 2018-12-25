@@ -1,0 +1,23 @@
+{
+    "nativescript": {
+        "id": "org.nativescript.contactstest",
+        "tns-android": {
+            "version": "5.2.0-2018-12-18-152217-02"
+        }
+    },
+    "main": "app.js",
+    "description": "NativeScript Application",
+    "license": "SEE LICENSE IN <your-license-filename>",
+    "repository": "<fill-your-repository-here>",
+    "dependencies": {
+        "nativescript-contacts": "^1.5.5",
+        "nativescript-permissions": "^1.2.3",
+        "nativescript-theme-core": "~1.0.4",
+        "tns-core-modules": "next"
+    },
+    "devDependencies": {
+        "nativescript-dev-typescript": "~0.7.0",
+        "nativescript-dev-webpack": "next"
+    },
+    "readme": "NativeScript Application"
+}
