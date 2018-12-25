@@ -20,7 +20,7 @@ Go to  `<project-name>/platforms/ios` and open <my-project-name.xcodeproj> (or `
     1. Select project target and go to `Capabilities`.
     2. Turn on App group and then select the Development team.
     3. After that the list of app groups will be shown, select app group.
-    4.**Now select extension and do the same to enable app groups**. The app is configured for sharing content.
+    4. **Now select extension and do the same to enable app groups**. The app is configured for sharing content.
 
 
 >**Imporant** : To be able to build app with **AppGroups enabled and configured** , you will need a provision profile for that AppId that has AppGroups enabled. (e.g. like the one for `org.nativescript.examples` in `Telerik A D` team but it has to be configured with groups). Building with provisioning profile for APpId that does not have AppGroups enabled and configured won't work.
