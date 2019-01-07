@@ -26,7 +26,7 @@
         "nativescript-theme-core": "~1.0.4",
         "reflect-metadata": "~0.1.8",
         "rxjs": "~6.3.0",
-        "tns-core-modules": "~5.1.0",
+        "tns-core-modules": "~5.1.1",
         "zone.js": "^0.8.26"
     },
     "devDependencies": {
@@ -34,7 +34,7 @@
         "@nativescript/schematics": "~0.4.0",
         "@ngtools/webpack": "~7.1.0",
         "nativescript-dev-typescript": "~0.7.0",
-        "nativescript-dev-webpack": "~0.18.0",
+        "nativescript-dev-webpack": "~0.19.0",
         "tns-platform-declarations": "^5.1.1"
     },
     "readme": "NativeScript Application"
