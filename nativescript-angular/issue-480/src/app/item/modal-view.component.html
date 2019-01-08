@@ -1,0 +1,10 @@
+<StackLayout rows="*,*" columns="*" class="page" backgroundColor="orangered">
+    <Image [src]="imageUrl" (tap)="uploadImage()" verticalAlignment="center" class="margin-bottom-s thumbnail"></Image>
+
+    <!-- <TextField row="1" colSpan="2" hint="Enter name" keyboardType="text" autocorrect="false" autocapitalizationType="none" class="margin-bottom-s" [(ngModel)]="character.name"></TextField>
+    <TextView row="2" colSpan="2" hint="Enter description" [editable]="true" class="margin-bottom-s" [(ngModel)]="character.description"></TextView> -->
+
+    <Button text="Save" (tap)="save(character)" class="btn-height btn-fontSize btn-positive"></Button>
+    <Button text="Cancel" (tap)="cancel()" class="btn-height btn-fontSize"></Button> 
+
+</StackLayout>
