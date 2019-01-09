@@ -12,9 +12,7 @@ export class AppComponent {
             [
                 "android.permission.INTERNET",
                 "android.permission.READ_EXTERNAL_STORAGE",
-                "android.permission.WRITE_EXTERNAL_STORAGE",
-                "android.permission.SET_WALLPAPER",
-                "android.permission.ACCESS_NETWORK_STATE"
+                "android.permission.WRITE_EXTERNAL_STORAGE"
             ],
             "I need these permissions"
         )

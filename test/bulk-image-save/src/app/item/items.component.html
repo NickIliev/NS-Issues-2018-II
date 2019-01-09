@@ -6,13 +6,16 @@
     <ListView row="2" class="list-view" [items]="roverPhotos | async" (loadMoreItems)="onLoadMoreItemsRequested($event)" separatorColor="#343838">
         <ng-template let-photo="item">
             <CardView elevation="40" radius="40" class="card">
-                <GridLayout rows="auto, *" columns="*, *, *" class="card-grid" height="240">
+                <GridLayout rows="auto, *, auto" columns="*, *, *" class="card-grid" height="240">
                     <Label row="0" col="0" [text]="photo.id" class="text-left p-5" textWrap="true"></Label>
                     <Label row="0" col="1" [text]="photo.cameraName" class="text-center p-5" textWrap="true"></Label>
                     <Label row="0" col="2" [text]="photo.earthDate" class="text-right p-5"></Label>
                     <Image row="1" col="0" colSpan="3" [src]="photo.imageUri" loadMode="async" stretch="aspectFill"></Image>
+                    <Button row="2" text="Get IMG SRC" (tap)="onGetSrc($event)"></Button>
                 </GridLayout>
             </CardView>
         </ng-template>
     </ListView>
+    
+
 </GridLayout>

@@ -10,7 +10,7 @@ export function onPageLoaded(args: EventData) {
     let label = new Label();
     console.log(`label: ${label}`);
 
-    label.text = "some text";
+    // label.text = "some text";
 
     // let page = args.object as Page;
     // page.content = label;

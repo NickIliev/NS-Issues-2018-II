@@ -7,6 +7,7 @@ import { getApiKey } from "../helpers/api";
 
 import { File, Folder, path, knownFolders } from "tns-core-modules/file-system";
 import { onSaveFile as onSaveFileHelper } from "../helpers/save";
+import { EventData } from "tns-core-modules/ui/page/page";
 
 @Injectable()
 export class ItemService {
@@ -26,9 +27,10 @@ export class ItemService {
         this.NASA_API_KEY = getApiKey();
     }
 
+
     getPhotosWithDateAndPageIndex(rover: string, year: number, month: number, day: number, pageIndex: number) {
         let documentsFolder = knownFolders.currentApp();
-        let cosmosFolderPath = path.join(documentsFolder.path.toString(), "new-cosmos-images");
+        let cosmosFolderPath = path.join(documentsFolder.path.toString(), "newCosmosImages");
 
         return this._http.get(this.getUpdatedUrl(rover, year, month, day) + "&page=" + pageIndex)
             .pipe(map(data => {
@@ -40,7 +42,7 @@ export class ItemService {
                         onSaveFileHelper(item.img_src, myPath);
                     }
 
-                    console.log(`Which File are we using!? ${fileExists ? ("~/new-cosmos-images/" + "image-"+ item.id  ) : item.img_src}`);
+                    console.log(`Which File are we using!? ${fileExists ? (myPath + "image-"+ item.id  ) : item.img_src}`);
 
                     itemsList.push(new RoverPhoto(
                         item.id,
@@ -49,7 +51,7 @@ export class ItemService {
                         item.camera.name,
                         item.camera.rover_id,
                         item.camera.full_name,
-                        fileExists ? ("~/new-cosmos-images/" + "image-"+ item.id  ) : item.img_src,
+                        fileExists ? ("~/newCosmosImages/" + "image-" + item.id  ) : item.img_src,
                         item.earth_date));
                 });
                 return itemsList;
