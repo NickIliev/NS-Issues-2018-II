@@ -12,11 +12,15 @@ export function onPageLoaded(args: EventData) {
 
     // label.text = "some text";
 
-    // let page = args.object as Page;
-    // page.content = label;
-
     setTimeout(() => {
+        let page = args.object as Page;
+        page.content = label;
+    }, 300);
+
+    label.on("loaded", () => {
         let nativeLabel = label.nativeView;
         console.log(`nativeLabel: ${nativeLabel}`);
-    }, 300);
+    })
+
+
 }
