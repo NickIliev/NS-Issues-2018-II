@@ -1,14 +1,17 @@
 import { AfterViewInit, Component, OnInit } from "@angular/core";
 
-import { isAndroid } from "tns-core-modules/platform";
-
-import { Page } from "tns-core-modules/ui/page";
-
 import { RoverPhoto } from "../models/rover-model";
 import { ItemService as RoverPhotosService } from "./item.service";
-import { Observable as RxObservable } from "rxjs";
 
-import { onSaveFile as onSaveFileHelper } from "../helpers/save";
+import { Observable as RxObservable } from "rxjs";
+import { isAndroid } from "tns-core-modules/platform";
+import { Page, EventData } from "tns-core-modules/ui/page";
+import { Image } from "tns-core-modules/ui/image";
+import { Button } from "tns-core-modules/ui/button";
+import { GridLayout } from "tns-core-modules/ui/layouts/grid-layout";
+import { File, Folder, path, knownFolders } from "tns-core-modules/file-system";
+
+import { requestPermission } from "nativescript-permissions";
 
 @Component({
     selector: "cosmos-rovers",
@@ -53,11 +56,6 @@ export class ItemsComponent implements OnInit, AfterViewInit {
             this._pageIndex
         );
     }
-
-    // onSaveFile() {
-    //     console.log(`this._tempArr[0].imageUri: ${this._tempArr[0].imageUri}`)
-    //     onSaveFileHelper(this._tempArr[0].imageUri);
-    // }
 
     private extractData(rover: string, year: number, month: number, day: number, _pageIndex: number) {
         this._roverService
