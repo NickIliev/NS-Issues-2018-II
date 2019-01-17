@@ -15,7 +15,11 @@
 
     <StackLayout row="1">
         <GridLayout rows="*" columns="*, auto">
-            <TextField #tf col="0" hint="enter message" [text]="message"></TextField>
+            <TextField #tf col="0"
+            hint="enter message" 
+            returnKeyType="done" 
+            (returnPress)="onSendViaReturn($event)"
+            [text]="message"></TextField>
             <Button col="1" text="SEND" (tap)="onSend($event)" class="btn btn-primary btn-active"></Button>
         </GridLayout>
     </StackLayout>

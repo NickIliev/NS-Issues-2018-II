@@ -52,6 +52,22 @@ export class ItemsComponent implements OnInit {
         args.view.context.right = this.items[args.index].from === "Ann";
     }
 
+    onSendViaReturn(args: EventData) {
+        
+        console.log(`this.textField..text ${this.textField.text}`);
+        this.items.push({id: 1234, from: "Ann", message: this.textField.text});
+
+        setTimeout(() => {
+            if (isAndroid) {
+                this.listView.android.smoothScrollToPosition(this.items.length - 1);
+            } else {
+                this.listView.scrollToIndexAnimated(this.items.length -1);
+            }
+        }, 300);
+
+        this.textField.text = "";
+    }
+
     onSend(args: EventData) {
         console.log(`onSend`);
         const btn = args.object as Button;
@@ -66,5 +82,7 @@ export class ItemsComponent implements OnInit {
                 this.listView.scrollToIndexAnimated(this.items.length -1);
             }
         }, 300);
+
+        this.textField.text = "";
     }
 }
