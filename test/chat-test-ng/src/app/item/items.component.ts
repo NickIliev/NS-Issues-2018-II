@@ -19,6 +19,11 @@ export class ItemsComponent {
         this.stack = this.container.nativeElement;
 
         let chatView = this.createChatView();
+
+        // Important! Testing purposes only code
+        // In Angular the right approach for adding components dynamically woul be to
+        // use dynamic component loader https://angular.io/guide/dynamic-component-loader 
+        // and not the NativeScript's addChild like methods
         this.stack.addChild(chatView);
     }
 
