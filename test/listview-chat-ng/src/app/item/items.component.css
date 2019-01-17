@@ -1,0 +1,17 @@
+.left {
+    background-color: orangered;
+    color: white;
+    border-radius: 5;
+    horizontal-align: left;
+}
+
+.right {
+    background-color: #30A9FF;
+    color: white;
+    border-radius: 5;
+    horizontal-align: right;
+}
+
+Label {
+    padding: 8;
+}

@@ -1,0 +1,25 @@
+
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+<GridLayout rows="*, auto" class="page">
+    <ListView #lv row="0" [items]="items" (setupItemView)="onSetupItemView($event)" class="list-group" separatorColor="white">
+        <ng-template let-item="item" let-left="left" let-right="right">
+            <GridLayout rows="auto" columns="*">
+                <StackLayout orientation="horizontal" [class.left]="left" [class.right]="right">
+                    <Label [text]="item.message"></Label>
+                </StackLayout>
+            </GridLayout>
+        </ng-template>
+    </ListView>
+
+    <StackLayout row="1">
+        <GridLayout rows="*" columns="*, auto">
+            <TextField #tf col="0" hint="enter message" [text]="message"></TextField>
+            <Button col="1" text="SEND" (tap)="onSend($event)" class="btn btn-primary btn-active"></Button>
+        </GridLayout>
+    </StackLayout>
+
+</GridLayout>
+
+
